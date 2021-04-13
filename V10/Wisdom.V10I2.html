@@ -1,0 +1,865 @@
+<html>
+
+<head>
+  <title> Wisdom V10I2 </title>
+</head>
+
+<body>
+<img src="../wwwhead.gif">
+  <p>
+  </p>
+  <h1>Wisdom, Volume 10 Issue 2, 1994</h1>
+  <p>
+
+  </p>
+  <ul>
+    <li> <a
+        href="#welcome">
+        Welcoming Committee </a>
+    </li>
+    <li> <a
+        href="#ftp">
+        FTP And The Internet </a>
+    </li>
+    <li> <a
+        href="#pentium">
+        Pentium Power </a>
+    </li>
+    <li> <a
+        href="#violence">
+        Violence in Software </a>
+    </li>
+    <li> <a
+        href="#pirate">
+        Pirates Sunset </a>
+    </li>
+    <li> <a
+        href="#tournament">
+        Pool Tournament </a>
+    </li>
+    <li> <a
+        href="#hyper">
+        HyperWisdom </a>
+    </li>
+    <li> <a
+        href="#ski">
+        C.S.S. Hits The Ski Slope </a>
+    </li>
+    <li> <a
+        href="#access">
+        Access Denied </a>
+    </li>
+    <li> <a
+        href="#office">
+        New Office </a>
+    </li>
+  </ul>
+  <a href="../index.html">
+    <img align="center" src="../go_top_btn.gif">
+    Index</a> of all <b>Wisdom</b> issues.
+ <p>
+
+  </p>
+  <hr>
+  <hr>
+
+  <a name="welcome">
+    <h2>Welcoming Committee</h2>
+  </a>
+  <p>
+    <i>by Dean T. Scott</i>
+
+  </p>
+  <p>Welcome back all ye carolers of the Holidays! I hope
+    you all enjoyed yourselves and had aspirin on hand. I
+    had a great Christmas but was sick for my New Years
+    Party. I'll wait while you dry your eyes.
+
+  </p>
+  <p>OK, continuing... We're all looking forward to lots of
+    work in the new year... well the movie night anyway;
+    and the executives are planning various other releases
+    for your programming frustration. Movie nights (<i>STAR
+      WARS TRIOLOGY</i>), a pool tournament and volleyball
+    should be a good start.
+
+  </p>
+  <p>If you have not had a chance to meet our new
+    professor I suggest you take the time. Her name is Dr.
+    Mounia Lalmas and she is anxious to meet the
+    students. It's nice to see that the new prof can talk to
+    people on their level and take the time to answer
+    questions even before she is offering a course. I think
+    that she is a positive addition to our faculty staff.
+
+  </p>
+  <p>On behalf of the students and executive staff,
+    WELCOME! Dr. Lalmas will be
+    teaching the Software Development
+    courses next September for those
+    interested, and these courses along
+    with a few other requirements will
+    make up a new Honours degree in
+    Computer Science. Well, why are
+    you still reading this, get going!!!
+    Have a great year and keep the
+    marks HIGH.
+
+  </p>
+  <p><i>V.P. Social Functions Dean T. Scott</i>
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="ftp">
+    <h2>FTP And The Internet</h2>
+  </a>
+  <p>
+    <i>by Ralph Markham</i>
+
+  </p>
+  <p>The Internet has a variety of useful resources. There
+    are thousands of files available to you, if you know how
+    to access them. The first thing to look at is transferring
+    files. FTP (File Transfer Protocol) and FSP are used to
+    transfer files. FSP is not a widely supported protocol, a
+    good number of the archives that support FSP are a
+    little more shady than those that support FTP. The
+    there is no public FSP server on the SGI or the SUN,
+    servers can be found at tp.robots.ox.ac.uk in "/pub/
+    ox.src/" using FTP. FTP is supported on both the SGI
+    and SUN and can be used to access a huge number of
+    public archives from which almost all information on
+    your local bbs has originated. There are a number of
+    basic commands you need to know the are as follows:
+
+  </p>
+  <p>
+  </p>
+  <dl>
+    <dt> <b>ascii</b>
+    </dt>
+    <dd> Sets the transfer mode to 7 bit for text files
+
+    </dd>
+    <dt> <b>binary </b>
+    </dt>
+    <dd> Sets the transfer mode to 8 bit for binary files
+
+    </dd>
+    <dt> <b>cd</b>
+    </dt>
+    <dd> Changes the working directory on the remote
+      machine
+
+    </dd>
+    <dt> <b>get</b>
+    </dt>
+    <dd> Retrieves the specified file. Note: remember to
+      set the correct transfer mode using
+      ascii or binary.
+
+    </dd>
+    <dt> <b>put</b>
+    </dt>
+    <dd> Puts the specified file on the
+      remote machine
+
+    </dd>
+    <dt> <b>mget</b>
+    </dt>
+    <dd> Multiple file get, the same as
+      get except you may use wild
+      characters or a list of files.
+
+    </dd>
+    <dt> <b>mput </b>
+    </dt>
+    <dd> Multiple file put, the same as
+      put except you may use wild
+      characters or a list of files.
+
+    </dd>
+    <dt> <b>prompt</b>
+    </dt>
+    <dd> Toggles prompting on or off when mget or mput are used.
+
+    </dd>
+    <dt> <b>bye</b>
+    </dt>
+    <dd> Ends the ftp session.
+    </dd>
+  </dl>
+
+
+  <p>The following is a quick ftp session that I did as an example.
+
+  </p>
+  <pre>(41)% ftp ftp.sunet.se 
+Connected to ftp.sunet.se. 
+220 ftp.sunet.se FTP server (Version wu-2.1c(2) Wed Nov 10 11:14:59 MET 1993) ready. 
+Name (ftp.sunet.se:mohamed): anonymous 
+331 Guest login ok, send your complete e-mail address as password. 
+Password: 
+230- 
+230- Swedish University Network SUNET 
+230- Archive ftp.sunet.se 
+230- 
+230-Welcome, you are user number 41 out of a possible total of 150. 
+230- 
+230-This system may be used 24 hours a day, 7 days a week. The local 
+230-time is Mon Jan 31 21:53:17 1994. 
+230-All transfers are logged with your host name and whatever you entered 
+230-for the password. 
+230- 
+230-If you have any problems or comments about this archive, please send 
+230-them via e-mail to archive@ftp.sunet.se. 
+230- 
+230-Please read the file README.access.methods 
+230- it was last modified on Tue Nov 23 11:40:41 1993 
+230 Guest login ok, access restrictions apply. 
+Remote system type is UNIX. 
+Using binary mode to transfer files. 
+ftp&gt; cd pub/graphics 
+250 CWD command successful. 
+ftp&gt; ls 
+200 PORT command successful. 
+150 Opening ASCII mode data connection for /bin/ls. 
+total 3 
+drwxrwxr-x 2 1001 1000 512 Jan 29 13:42 FLC 
+drwxrwxr-x 2 1001 1100 512 Oct 23 05:18 jpeg 
+drwxrwxr-x 11 1001 1100 1024 Dec 11 05:36 mpeg 
+226 Transfer complete. 
+ftp&gt; cd jpeg 
+250-Files within this subtree are automatically mirrored 
+250- 
+250-Please read the file README
+250- it was last modified on Thu Feb 25 01:00:00 1993 - 340 days ago 
+total 661 
+-r--r--r-- 1 1001 1100 54 Jan 3 1992 .message 
+-r--r--r-- 1 1001 1100 2212 Feb 25 1993 README
+-r--r--r-- 1 1001 1100 1373 Feb 24 1993 README.Z 
+-r--r--r-- 1 1001 1100 32788 Sep 9 1992 jfif.ps.Z
+-r--r--r-- 1 1001 1100 6783 Sep 9 1992 jfif.txt.Z 
+-r--r--r-- 1 1001 1100 3506 Feb 25 1993 jpeg.documents.Z 
+-r--r--r-- 1 1001 1100 459539 Dec 10 1992 jpegsrc.v4.tar.Z 
+-r--r--r-- 1 1001 1100 2067 Feb 25 1993 pm.errata.Z 
+-r--r--r-- 1 1001 1100 134843 Dec 18 1991 wallace.ps.Z 
+226 Transfer complete. 
+ftp&gt; ascii 
+200 Type set to A. 
+ftp&gt; get README 
+local: README remote: README 
+200 PORT command successful. 
+150 Opening ASCII mode data connection for README (2212 bytes). 
+226 Transfer complete. 
+2260 bytes received in 2.96 seconds (0.75 Kbytes/s)
+ftp&gt; binary 
+200 Type set to I. 
+ftp&gt; get jpeg.documents.Z 
+local: jpeg.documents.Z remote: jpeg.documents.Z 
+200 PORT command successful. 
+150 Opening BINARY mode data connection for jpeg.documents.Z 
+(3506 bytes). 
+226 Transfer complete. 
+3506 bytes received in 1.67 seconds (2.05 Kbytes/s)
+ftp&gt; bye 221 Goodbye. 
+
+(42)%
+</pre>
+
+  <p> Some of the problems you might run into.
+
+  </p>
+  <p>Q. you downloaded the file and it doesn't work
+
+  </p>
+  <p>A. download it again but make sure you enter "binary" first, to specify binary
+    transfer mode.
+
+  </p>
+  <p>Q. you only get half a file or the transfer cuts out before its finished.
+
+  </p>
+  <p>A. This is probably due to your disk space quota and all you should need to
+    remedy this is to make a directory in the /tmp directory and download the files
+    there.
+
+  </p>
+  <p> Getting your programs off the system can be done in one of two ways at
+    home using kermit (i.e. kermit -i -s bin.file.name, kermit -s text.file.name) or at
+    the computer center using the 486's.
+
+  </p>
+  <p> On another note you may have found that certain news groups which are
+    not available on the system like <i>alt.fan.?????</i>. Although these news groups
+    are not on the system it does not mean that you can not get them. Try looking
+    in the following ftp sites under the path /pub/usenet/news.group.name:
+    <i>pit-manager.edu</i> or <i>ftp.sunet.se</i>. If you have an fsp server you
+    can also find them at 131.215.131.148 21.
+
+  </p>
+  <p> Another way to transfer files is to use e-mail, this can be used for both
+    binary and text. Special preparation of binary files is needed, each binary file
+    must be encoded using uuencode (e.g. uuencode file.name). Similarly the
+    receiver must decode the file using uudecode (e.g. uudecode file.name).
+
+  </p>
+  <p>For those of you who are interested in the internet and would like to know
+    more I strongly recommend "The Whole Internet User's Guide &amp; Catalog" by
+    Ed Krol which I believe is still available in the University book store.
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="pentium">
+    <h2>Pentium Power</h2>
+  </a>
+  <p>
+    <i>by: Ursula Bagnell </i>
+
+  </p>
+  <p>For all you people that were in 60-
+    100 and heard Dr. Frost refer to that
+    `pentium chip' and had no clue about
+    what he was referring to. This article
+    is for you!
+
+  </p>
+  <p>There is a new source of
+    computing power which has been
+    discovered. It can amazingly
+    execute two instructions at once.
+    This incredible chip can produce
+    processing speeds of over 100 MIPS
+    (millions of instructions per second).
+    It is called the Pentium. by Intel. This
+    article will briefly explain how its
+    technology is making PCs run faster
+    today.
+
+  </p>
+  <p>In General there are three ways in
+    which to make microprocessors run
+    faster:
+
+  </p>
+  <dl>
+    <dt><b>Increase the number of
+        transistors on a chip.</b>
+
+    </dt>
+    <dd>Using submicron components
+      enables designers to fit over 3
+      million transistors on a single chip.
+      This allows designers to add
+      components, for example math co-
+      processors and caches right onto
+      the CPU, considerably cutting
+      access time.
+
+      <p>
+      </p>
+    </dd>
+    <dt><b>Increase the clock speed.</b>
+
+    </dt>
+    <dd>Not to long ago (say 12 years) the
+      clock speed ticked along at an
+      extremely slow rate of 4.7 MHz. Now
+      with new technology they can run at
+      an astonishing 66 MHz -- and they
+      are still striving for more.
+
+      <p>
+      </p>
+    </dd>
+    <dt><b>Increase the number of
+        executions per clock cycle.</b>
+
+    </dt>
+    <dd>Now with new superscalar
+      technology, processors are now
+      capable of executing two
+      instructions per clock cycle.
+    </dd>
+  </dl>
+
+  <p>These features, help the Pentium
+    processor crunch more than 100
+    MIPS at a clock speed of 60 MHz.
+    Pentium processor based PCs are
+    now as fast as workstations. Yes that
+    means that it can perform 2 times
+    better than the Intel 486 DX2 66
+    MHz processor. Also, the
+    redesigned floating-point unit on the
+    Pentium processor offers up to 5
+    times the performance of the Intel
+    486DX2-66 CPU for math-intensive
+    applications.
+
+  </p>
+  <p>This pentium processor allows
+    programmers to broaden their
+    horizons in the software industry,
+    such as 3-D design, multimedia,
+    handwriting and voice recognition,
+    virtual reality and more.
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="violence">
+    <h2>Violence in Software</h2>
+    <i>by Dean T Scott</i>
+
+    <p>You've seen it on the TV news, in the paper and possibly the radio morning
+      show, violence in software is creating waves of debate. Mortal Combat, Doom
+      and Death Trap along with many other titles of popular games are among the
+      headlines. These games are available for games systems such as SEGA,
+      Super Nintendo, and also some for the home PC. Many groups are upset at
+      the gruesome acts of savagery portrayed in the games.
+
+    </p>
+    <p>Mortal Combat is just as the name suggests, the combatants use various
+      fighting techniques to fell their opponent and every character has special
+      moves. This in itself is not too bad. The blood that is shown when a player is
+      hit adds effective energy to the game; but is it too much. The real problem
+      occurs in the DEATH MOVES. When a player is almost beaten and can barely
+      stand their aggressor is told to FINISH HIM. At this point the heart may be
+      ripped out, the head with the spine still attached can be held as a trophy, or
+      the player may be burnt to a crisp and their bones crumble. These are just the
+      more gory kills.
+
+    </p>
+    <p>SEGA uses a special code on the games for parents to monitor what their
+      children buy. It is much like the movie ratings. We all know how affective those
+      are! Super Nintendo went as far as not programming in the blood and some of
+      the end moves. On a positive side, SEGA has to have a code entered into the
+      game to turn on blood and DEATH MOVES, but I received the code from a
+      twelve year old when I was at work. When asked where he had obtained it he
+      replied, "It's in all the game magazines at the bookstore." I checked and the
+      magazines are accessible to all ages and not only book stores but at every
+      convenience store you can possibly name.
+
+    </p>
+    <p>Doom is a game that has actually come far in its graphics enhancements if
+      only in game play. The use of darkness and flashes of light when a gun is fired
+      enhance game play dramatically and also instill fear in the player. I know. I
+      have it. Out from under the covers now so I'll continue. You are basically on a
+      moon base fighting aliens. You have a variety of weapons which cause the
+      aliens to crumble in a pool of blood. Parts of their body explode and if you are
+      lucky enough to own a sound card you can hear the screams of pain. One
+      thing to remember that these are graphical aliens who are being killed and not
+      people as in Mortal Combat. Even in Mortal Combat the characters are almost
+      supernatural so the player is disassociated from the violence. The person is
+      still not part of the game.
+
+    </p>
+    <p>Death Trap is a CD ROM game and employs real life actors and actresses
+      to play roles in the game. The theme is zombi-like men attack women at a
+      slumber party. Of course the girls are in lingerie and appear to be helpless.
+      The main problem with this game is that the violence is so realistic and similar
+      to today's social problems. Many experts agree that brutality against women
+      on TV promotes the onslaught in real life. Games which also consist of such
+      actions are no different in the fact that they have a negative impact on
+      younger viewers, if not all viewers. It differs in the sense that the person
+      playing the game has full control over the outcome, hence the life of another
+      person. On TV we are just the spectators. That is bad enough. TV is highly
+      censored and most sensitive issues or shows are on after eight PM. Parents
+      watch the shows and see the warnings before viewing. Thus they can
+      regulate what the child watches. Also, many parents do not realize what the
+      games their children play actually consist of.
+
+    </p>
+    <p>Retail, unfortunately does not have strong enough regulations on who can
+      buy what games, and they can be purchased anywhere. Children can rent the
+      games from video stores and games stores. They are too accessible to
+      young, impressionable people. Everyone is at odds for a solution to the
+      problem. Some say to ban the games entirely, while others say to allow the
+      parents to regulate their own children. No matter what the outcome, someone
+      will be upset. I think that the games should be rented to persons of the
+      appropriate age group. Utilizing the codes similar to that used by movie
+      theaters and rental outlets. As long as the proprietor followed the rules then
+      the problem could be minimized. Unfortunately I don't see the problem
+      disappearing totally, but that would be a start. One thing is for sure though,
+      Pac Man was too tame!
+    </p>
+    <p>
+    </p>
+    <hr>
+
+  </a><a name="pirate">
+    <h2>Pirates Sunset</h2>
+  </a>
+  <p>
+    <i>by Ron McKenzie</i>
+
+  </p>
+  <p>1993: The year of the CD-ROM. The year opened with the standard MPC-1
+    compatible drives costing over $300 Cnd, and the newer MPC-2, or double-
+    spin, drives costing as much as $1000. As we look ahead into 1994 we see a
+    new batch of quad-spin drives coming out. First out of the gate was Pioneer,
+    with it's DRM604X 6 disc quadraspin. NEC will be soon to follow with it's
+    MultiSpin 4X Pro. Both of these drives will set you back over $1000, with the
+    NEC drive doing less damage. These drives will be falling throughout the
+    year, and driving down the price of the lesser drives. Already the prices on the
+    double-spin drives are dipping as low as $300 Cnd.
+
+  </p>
+  <p>Now these falling prices will make drives more accessible, but this is nothing
+    new. Bigger, faster, better, newer stuff driving down the prices of yesterday's
+    technology. Rocketing performance and free-falling prices are standard fare in
+    the computer industry. My concern is on the software end. Most significant, in
+    my book, was CorellDraw! 4 coming out on CD-ROM. Oh, sure I know that
+    OS/2 and a slew of other large programs came out on CD-ROM, but I feel that
+    CorellDraw tells the story best. Although it came out on both CD and disc the
+    versions were not the same. The CD contained hundreds of extra fonts and
+    thousands of extra clip-art pictures. Now the reason I feel that this is important
+    is that there is no good way to pirate this. Even if you totally ignore the
+    manuals, the warranty, the support, your time, the ethical concerns, and
+    consider only the cost of storing the information, you'll find it costs more than
+    it's worth to pirate it. Floppy, floptical, hard drive, MO, WORM, will all cost you
+    more than it w
+
+  </p>
+  <p>I'm not sure of the exact stats on the percent of pirated CDs, but I'm sure it's
+    near 0, compared to about 50% for most other software. This is a very
+    important result. Designers of CD-ROM software are receiving their just
+    rewards. As more and more people buy CD-ROM drives, more and more
+    designers will put their new software on CD-ROM, and will take advantage of
+    the properties of this medium.
+
+  </p>
+  <p>And the dirty, hidden, unspoken, secret question that lingers in the dark
+    recesses of many pirates. "What about us?". Well, It's good for you too! (For
+    those of you who are not sure if you are a pirate or not, if you have any
+    software that is not public domain, and you have not paid for it, you are a
+    pirate.) The benefits of the CD-ROM uprising are many, and far-reaching.
+    First off, you don't have to break the law to feel you are getting the most out of
+    your computer (Competition is usually more important than objective
+    performance.). There is no risk of getting caught, and facing penalties. All of
+    your software will have manuals (Sure, you'll still jump right in without reading
+    them, but they save valuable hours when you get in a fix, and help you fully
+    utilize the product. Besides the manuals for games are cool to read.). I've
+    seen people who have hard drives full of pirated software, but still can barely
+    use their machine. They have no manuals, so they scarcely know what their
+    software does, much less how
+
+  </p>
+  <p>So why is piracy so prevalent?
+    Well, there are a number of users
+    willing to spend the extra time it
+    takes to learn a software package
+    without the manual. For those who
+    do not it is the illusion of getting
+    something for nothing, an under-
+    estimation of the value of their time,
+    the idea that everyone is doing it so
+    it's OK, lack of knowledge, and trust.
+    The last two are closely linked. Most
+    people when they first get their
+    machine know next to nothing about
+    it. So, they get a hold of someone
+    who does to come over and `fix-up'
+    their machine for them. This usually
+    consists of helping them understand
+    their bundled software, configuring
+    their memory, and filling their hard
+    drive. When you don't know what
+    you are doing you trust those who
+    do. When an experienced user
+    pirates software for you, you assume
+    he/she's doing you a favour. The
+    end-result certainly does not look
+    that way. So there goes the average
+    family with their 2.7 kids, 2 car
+    garage, and a desktop machine full
+    of potential, and no way to use it.
+
+  </p>
+  <p>The advantages reach far beyond
+    forcing us to be honest. The fact that
+    designers will be paid for each and
+    every copy that is sold means
+    designers will make more money.
+    The more money that is going to
+    designers, the competition on the
+    part of designers to receive a bigger
+    slice of the pie. This results in lower
+    prices and higher quality software on
+    CD-ROM. This, of course has a
+    circular effect of more people buying
+    CD-ROM drives to tap into this neat
+    stuff.
+
+  </p>
+  <p>Let me not forget the direct
+    advantages of the media form itself.
+    640 MB of space goes a long way,
+    and provides opportunity for many
+    forms of multi-media to be realized.
+    Also, because they are read-only
+    you need not worry about them
+    becoming infected with viruses. For
+    those whom are looking to buy a
+    CD-ROM drive, I wouldn't suggest
+    getting anything slower than a
+    doublespin (300K/s). The strength of
+    CD-ROM lies in the bulk of video it
+    can store. On a standard CD-ROM
+    the refresh rate is just too slow. For
+    those who thought this article was
+    going to be a review of Pirates! Gold,
+    talk to Bryan Brown, he picked it up
+    a while back
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  This is what happens when you don't stick to the
+  bunnny hill. But it was a valiant group effort.
+
+  Some people were so anxious to ski, they even tooked
+  a closed highway to get there!
+
+  Rob Berg's pork chops a la beer.
+
+  Ralph Markham's spaghetti and his beer.
+
+  After a hard day of non-stop skiing, a bit or relaxing
+  was in order
+  <p>
+    <a name="tournament">
+    </a></p>
+  <h2><a name="tournament">Pool Tournament</a></h2>
+
+  <p>The C.S.S. is having yet
+    another one. This time
+    it's at Last Harry's Sports
+    Bar (corner of Ouellette
+    and Tecumseh). Sign up
+    at the office or talk
+    directly to Dario Sfalcin.
+    The tournament is on the
+    16th of Feb.
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="hyper">
+    <h2>HyperWisdom:</h2>
+  </a>
+  <p>
+  </p>
+  <h3>Comming To A Computer Near You!</h3>
+  <p>
+    <i>by: Alain Siodlowski</i>
+
+  </p>
+  <p>If you have had the chance to try
+    the World Wide Web with Mosaic
+    (xmosaic, WinMosaic etc.) , then you
+    can appreciate the usefullness of
+    HyperText and global infomation
+    access (like the WWW, gopher,
+    WAIS, etc.). The University of
+    Windsor not only has access to the
+    WWW, but also has documents on it.
+    The WWW is basically a giant
+    Hyper-linked document. But
+    individual "pages" can be located on
+    different systems around the world.
+    The WWW also supports multi-
+    media. Thus it not only contains text,
+    but also images, animation and
+    sound.
+
+  </p>
+  <p>Starting this year, the Wisdom (and
+    other info from, the C.S.S.) will be
+    available on Mosaic. The transfer
+    will be made soon (when I have the
+    time to do it). But the Wisdom will
+    still be published on paper, at least
+    until xmosaic is easily accessible on
+    the SGI. Mosaic is, at the moment,
+    available on the SUN system and on
+    the Computer Centre's Novell
+    network (Windows). Documents are
+    stored on turner.lamf.uwindsor.ca in
+    the School of Computer Science.
+
+  </p>
+  <p>As for the Wisdom itself, well... I'm
+    still trying to get more articles from
+    the general membership (i.e. YOU!)
+    on various subjects (tips, review of
+    new technologies, how to hook up a
+    VAX in your house(remember it's 3
+    phase), etc.). There is the usual
+    $5.00 for any articles published. You
+    don't have to be a world class
+    author, just interested. Submit any
+    articles (or questions, suggestions)
+    to: wisdom@cs.uwindsor.ca
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="ski">
+    <h2>C.S.S. Hits The Ski Slope</h2>
+  </a>
+  <p>
+    <i>by Alain Siodlowski</i>
+
+  </p>
+  <p>The ski trip to Blue Mountain, Collinwood,
+    was a chance for many to try
+    out new experiences. A few people hit the slopes
+    (literally, they fell), others
+    came in close contact with nature (i.e. hit a tree)
+    or met new people (ran in
+    to them) and some felt the cool soothing (almost
+    religious) effects of the
+    bathroom floor (after a long gruelling night of
+    partying). But no one got hurt
+    and no one got sued. The
+    skiing conditions were
+    excellent and the slopes not
+    too crowded. In all about 70
+    people went on the trip, and
+    came back in one piece.
+
+  </p>
+  <p>The trip started on Friday
+    the 21st of Jan. at around
+    11:30am for most of us. The
+    bus arrived at Blue
+    Mountain on time. Others
+    who took there cars also
+    arrived, more or less, at the
+    same time. But for one
+    group of four people, who
+    took Highway 24, it took a
+    little longer due to poor (sometimes non-existent)
+    visibility. See the photo on
+    the next page, taken after they got off the
+    highway.
+
+  </p>
+  <p>Friday night was cold and very windy. Going up the ski lift (against the
+    wind) was just a joy. Going down felt like having rockets strapped to your
+    back. Some people started partying as soon as they arrived at Blue
+    Mountain, others waited until the slopes closed at 10:00 pm before starting.
+
+  </p>
+  <p>Saturday, when everyone got up (around noon or so), the sun was
+    shinning and slopes full of people. The weather was perfect for skiing. This
+    was also the day when most of us took full advantage of the fully equipped
+    kitchens we had in our condos. Spaghetti, pork chops, pies etc. where
+    prepared. Some of us also had a chance to see downtown Collinwood while
+    replenishing our supplies. We also got to see some
+    of the facilities of the resort, such as the pool,
+    sauna, indoor tennis courts, restaurants and the
+    night clubs.
+
+  </p>
+  <p>Sunday we had to be out of the condos by 11:00
+    am and we were on our way back to Windsor. The
+    trip was fun and for those of you who missed it,
+    reserve your spot early for our next ski trip next
+    year.
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="access">
+    <h2>Access Denied</h2>
+  </a>
+  <p>
+    <i>by: Glen Awad</i>
+
+  </p>
+  <p>"No! you can't use the computers here."
+
+  </p>
+  <p>This is what you can expect if
+    you want to work on a word perfect
+    document in the Odette computer
+    lab. It does not matter if you are a
+    computer science student, or if the
+    Odette lab is empty, and the
+    computer center is full. All that
+    matters is that you are a business
+    student! But, most Computer
+    Science students take business
+    courses. Why can't we use an empty
+    computer lab when the other lab is
+    overflowing? "The business
+    department paid for the lab" said Mr.
+    Walter Manney. False! You paid for
+    the lab with your ever increasing
+    tuition fees. When will we all work
+    together on issues like these. This is
+    a place for learning and growing!
+  </p>
+  <p>
+  </p>
+  <hr>
+
+  <a name="office">
+    <h2>New Office!</h2>
+  </a>
+  <p>
+
+    Our office is now
+
+    <a
+      href="https://web.archive.org/web/19970411131120/http://www.cs.uwindsor.ca/units/css/images/OfficeLocationSmall.gif">
+      located on the </a>
+    2nd floor of the CAW student centre
+    in the club and society room. The
+    phone number is 253-4232 ext. 3507
+  </p>
+  <p>
+  </p>
+  <hr>
+  <hr>
+  <p>
+    <i>wisdom@cs.uwindsor.ca</i>
+  </p>
+  <p>
+    <!--
+     FILE ARCHIVED ON 13:11:20 Apr 11, 1997 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:16:43 Apr 13, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+    <!--
+playback timings (ms):
+  exclusion.robots: 0.364
+  load_resource: 111.256
+  PetaboxLoader3.datanode: 145.197 (4)
+  esindex: 0.016
+  exclusion.robots.policy: 0.346
+  CDXLines.iter: 24.162 (3)
+  captures_list: 196.822
+  LoadShardBlock: 167.241 (3)
+  PetaboxLoader3.resolve: 95.763 (2)
+  RedisCDXSource: 0.972
+-->
+  </p>
+</body>
+
+</html>
